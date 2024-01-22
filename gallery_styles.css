@@ -1,0 +1,283 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 10px;
+    padding: 0;
+    background: linear-gradient(221deg, #171717 25.36%, #080808 66.49%);
+    background-size: inherit;
+}
+body {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+
+#navbarNav{
+    padding-left: 200px;
+}
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: top 0.3s;
+    align-items: center;
+}
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+.nav-link{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.navbar-nav {
+    width: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-right: 15px;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+.current_language:hover{
+    color: white;
+}
+
+.navbar-nav .nav-item .dropdown-menu {
+    margin-top: 5px;
+    display: none;
+    border-radius: 4px;
+}
+
+.current_language{
+    color: rgba(255, 255, 255, 0.64);
+    font-family: 'Montserrat', sans-serif;
+}
+
+#languageDropdownMenu {
+    display: none;
+    position: absolute;
+    background: none;
+    border: none;
+    border-radius: 4px;
+}
+
+#drop_item2{
+    background-color: #000000;
+    color: rgba(255, 254, 254, 0.71);
+    border-bottom-left-radius: 4px;
+}
+#drop_item2:hover{
+    color: #000000;
+    background-color: white;
+}
+#drop_item{
+    border-top-left-radius: 4px;
+    background-color: #000000;
+    color: rgba(255, 254, 254, 0.71);
+}
+#drop_item:hover{
+    color: #000000;
+    background-color: white;
+}
+
+
+#social{
+    margin-right: 50px;
+    padding-bottom: 5px;
+}
+
+.social_item{
+    opacity: 60%;
+}
+.social_item:hover{
+    opacity: 100%;
+}
+
+
+
+
+section {
+    padding: 0 !important;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: space-between; /* Updated to space-between */
+}
+
+.gallery-item {
+    box-sizing: border-box;
+    margin: 10px;
+    width: calc(33.33% - 20px);
+    position: relative;
+    cursor: pointer;
+}
+.gallery-item:hover{
+
+}
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images maintain aspect ratio and cover the container */
+    border-radius: 8px;
+}
+
+.gallery-item.horizontal {
+    width: calc(66.66% - 20px); /* Adjusted width for horizontal items */
+}
+
+
+
+@media (max-width: 820px) {
+    #navbarNav{
+        padding-left: 350px;
+    }
+
+    .modal-controls{
+        padding: 0 0;
+    }
+}
+
+
+
+@media (max-width: 430px) {
+    #navbarNav{
+        padding-left: 160px;
+    }
+
+    .modal-controls{
+        padding: 0 0;
+    }
+
+}
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(25, 25, 25, 1);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal img {
+    max-width: 80%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
+}
+
+.modal-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+}
+.modal-controls button:hover{
+    opacity: 100%;
+}
+.modal-controls button {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 50px;
+    cursor: pointer;
+    opacity: 50%;
+}
+
+#close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 60px;
+    cursor: pointer;
+    opacity: 50%;
+}
+
+#close:hover{
+    opacity: 100%;
+}
+
+.photo_preview,
+.photo_preview2:hover{
+    cursor: pointer;
+}
+
+.btn-up {
+    position: fixed;
+    background: none;
+    right: 20px;
+    bottom: 100px;
+    border-radius: 100px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+.btn-up::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-size: 100% 100%;
+    background-image: url("img/up.png");
+}
+
+.btn-up_hide {
+    display: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .btn-up:hover {
+        background-color: rgba(87, 87, 87, 0.78);
+    }
+}

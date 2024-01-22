@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yana Krstic</title>
+    <link rel="stylesheet" href="gallery_styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+</head>
+<body>
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <button class="navbar-toggler d-lg-none d-xl-none" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link english-text" href="index.html" lang="en">Home</a>
+                <a class="nav-link german-text" href="index.html" lang="de">Heim</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link english-text" href="index.html#about" lang="en">About</a>
+                <a class="nav-link german-text" href="index.html#about" lang="de">Über</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link english-text" href="index.html#contact" lang="en">Contact</a>
+                <a class="nav-link german-text" href="index.html#contact" lang="de">Kontakt</a>
+            </li>
+        </ul>
+    </div>
+    <ul class="navbar-brand" id="social">
+        <li>
+            <a class="social_item"
+               href="https://www.instagram.com/lemtyuhova_yana?igshid=MTNiYzNiMzkwZA%3D%3D&utm_source=qr">
+                <img src="img/instagram.png" width="20" height="auto" alt="instagram">
+            </a>
+        </li>
+        <li>
+            <a class="social_item" href="https://www.facebook.com/ranko.krstic.7">
+                <img src="img/facebook.png" width="20" height="auto" alt="facebook">
+            </a>
+        </li>
+        <li>
+            <a class="social_item" href="whatsapp://send?abid=+41 79 925 60 56&text=Hello%2C%20World!">
+                <img src="img/whatsapp.png" width="20" height="auto" alt="">
+            </a>
+        </li>
+    </ul>
+
+    <div class="navbar-nav ml-auto">
+
+        <div class="nav-item dropdown">
+            <div class="dropdown-toggle" id="languageDropdown">
+                <span class="social_item"><img src="img/global.png" width="20px" height="auto" alt=""></span>
+            </div>
+            <div class="dropdown-menu" id="languageDropdownMenu" aria-labelledby="languageDropdown">
+                <a class="dropdown-item language-option" id="drop_item" href="#" data-language="english" onclick="changeLanguage('english')">EN</a>
+                <a class="dropdown-item language-option" id="drop_item2" href="#" data-language="german" onclick="changeLanguage('german')">DE</a>
+            </div>
+        </div>
+    </div>
+
+
+</nav>
+<div class="gallery">
+    <figure class="gallery-item">
+        <img src="img/1/02.jpg" class="gallery-item__image">
+    </figure>
+    <figure class="gallery-item horizontal">
+        <img src="img/1/23.jpg" alt="" class="gallery-item__image2">
+    </figure>
+    <figure class="gallery-item horizontal">
+        <img src="img/1/29.jpg" alt="" class="gallery-item__image2">
+    </figure>
+    <figure class="gallery-item">
+        <img src="img/2/IMG_2105.jpg" alt="" class="gallery-item__image">
+    </figure>
+    <figure class="gallery-item">
+        <img src="img/2/IMG_2120.jpg" alt="" class="gallery-item__image">
+    </figure>
+    <figure class="gallery-item">
+        <img src="img/2/IMG_2136.jpg" alt="" class="gallery-item__image">
+    </figure>
+    <figure class="gallery-item">
+        <img src="img/2/IMG_2166.jpg" alt="" class="gallery-item__image">
+    </figure>
+    <figure class="gallery-item horizontal">
+        <img src="img/1/33.jpg" alt="" class="gallery-item__image2">
+    </figure>
+    <figure class="gallery-item">
+        <img src="img/1/49.jpg" alt="" class="gallery-item__image">
+    </figure>
+    <figure class="gallery-item">
+        <img src="img/2/IMG_2170.jpg" alt="" class="gallery-item__image">
+    </figure>
+    <figure class="gallery-item">
+        <img src="img/2/IMG_2172.jpg" alt="" class="gallery-item__image">
+    </figure>
+    <figure class="gallery-item">
+        <img src="img/2/IMG_2176.jpg" alt="" class="gallery-item__image">
+    </figure>
+    <figure class="gallery-item">
+        <img src="img/1/3908.jpg" alt="" class="gallery-item__image2">
+    </figure>
+    <figure class="gallery-item horizontal">
+        <img src="img/1/43.jpg" alt="" class="gallery-item__image2">
+    </figure>
+    <figure class="gallery-item">
+        <img src="img/1/39082.jpg" alt="" class="gallery-item__image">
+    </figure>
+    <figure class="gallery-item">
+        <img src="img/1/39083.jpg" alt="" class="gallery-item__image">
+    </figure>
+    <figure class="gallery-item">
+        <img src="img/1/39084.jpg" alt="" class="gallery-item__image">
+    </figure>
+    <figure class="gallery-item">
+        <img src="img/1/39085.jpg" alt="" class="gallery-item__image">
+    </figure>
+
+    <figure class="gallery-item">
+        <img src="img/1/39086.jpg" alt="" class="gallery-item__image">
+    </figure>
+    <figure class="gallery-item">
+        <img src="img/1/39087.jpg" alt="" class="gallery-item__image">
+    </figure>
+    <figure class="gallery-item">
+        <img src="img/2/IMG_2190.jpg" alt="" class="gallery-item__image">
+    </figure>
+    <figure class="gallery-item">
+        <img src="img/2/IMG_2207.jpg" alt="" class="gallery-item__image">
+    </figure>
+    <figure class="gallery-item">
+        <img src="img/2/IMG_2273.jpg" alt="" class="gallery-item__image">
+    </figure>
+    <figure class="gallery-item">
+        <img src="img/2/IMG_2287.jpg" alt="" class="gallery-item__image">
+    </figure>
+    <figure class="gallery-item">
+        <img src="img/2/IMG_2301.jpg" alt="" class="gallery-item__image">
+    </figure>
+    <figure class="gallery-item">
+        <img src="img/2/IMG_2329.jpg" alt="" class="gallery-item__image">
+    </figure>
+</div>
+
+<div class="modal" id="myModal">
+    <button id="close" onclick="closeModal()">&#10539;</button>
+    <div class="modal-controls">
+        <button onclick="prevImage()">&#10092;</button>
+        <button onclick="nextImage()">&#10093;</button>
+    </div>
+    <img id="modalImg" class="modal-content">
+</div>
+
+
+<div class="btn-up btn-up_hide"></div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+        document.body.classList.add('loaded');
+
+        var gallery = document.querySelector('.gallery');
+        var masonry;
+
+        function initializeMasonry() {
+            if (masonry) {
+                masonry.destroy();
+            }
+
+            masonry = new Masonry(gallery, {
+                itemSelector: '.gallery-item',
+                columnWidth: '.gallery-item',
+                gutter: 10,
+                fitWidth: true
+            });
+
+            // Manually trigger layout after images have loaded
+            masonry.layout();
+        }
+
+        imagesLoaded(gallery, function () {
+            initializeMasonry();
+        });
+
+        window.addEventListener('resize', function () {
+            initializeMasonry();
+        });
+    });
+
+
+    var images = document.querySelectorAll('.gallery-item img');
+    var currentImageIndex = 0;
+
+    function openModal(index) {
+        var modal = document.getElementById('myModal');
+        var modalImg = document.getElementById('modalImg');
+        currentImageIndex = index;
+        modal.style.display = 'flex';
+        modalImg.src = images[index].src;
+    }
+
+    function closeModal() {
+        var modal = document.getElementById('myModal');
+        modal.style.display = 'none';
+    }
+
+    function prevImage() {
+        if (currentImageIndex > 0) {
+            currentImageIndex--;
+            document.getElementById('modalImg').src = images[currentImageIndex].src;
+        }
+    }
+
+    function nextImage() {
+        if (currentImageIndex < images.length - 1) {
+            currentImageIndex++;
+            document.getElementById('modalImg').src = images[currentImageIndex].src;
+        }
+    }
+
+    // Adding event listeners for each image
+    images.forEach(function(image, index) {
+        image.addEventListener('click', function() {
+            openModal(index);
+        });
+    });
+</script>
+
+</body>
+</html>

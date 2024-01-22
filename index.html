@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yana Krstic</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header id="home">
+
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <button class="navbar-toggler d-lg-none d-xl-none" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link english-text" href="#about" lang="en">About</a>
+                    <a class="nav-link german-text" href="#about" lang="de">Über</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link english-text" href="#contact" lang="en">Contact</a>
+                    <a class="nav-link german-text" href="#contact" lang="de">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link english-text" href="gallery.html" lang="en">Gallery</a>
+                    <a class="nav-link german-text" href="gallery.html" lang="de">Galerie</a>
+                </li>
+            </ul>
+        </div>
+        <ul class="navbar-brand" id="social">
+            <li>
+                <a class="social_item"
+                   href="https://www.instagram.com/lemtyuhova_yana?igshid=MTNiYzNiMzkwZA%3D%3D&utm_source=qr">
+                    <img src="img/instagram.png" width="20" height="auto" alt="instagram">
+                </a>
+            </li>
+            <li>
+                <a class="social_item" href="https://www.facebook.com/ranko.krstic.7">
+                    <img src="img/facebook.png" width="20" height="auto" alt="facebook">
+                </a>
+            </li>
+            <li>
+                <a class="social_item" href="whatsapp://send?abid=+41 79 925 60 56&text=Hello%2C%20World!">
+                    <img src="img/whatsapp.png" width="20" height="auto" alt="">
+                </a>
+            </li>
+        </ul>
+
+        <div class="navbar-nav ml-auto">
+
+            <div class="nav-item dropdown">
+                <div class="dropdown-toggle" id="languageDropdown">
+                    <span class="social_item"><img src="img/global.png" width="20px" height="auto" alt=""></span>
+                </div>
+                <div class="dropdown-menu" id="languageDropdownMenu" aria-labelledby="languageDropdown">
+                    <a class="dropdown-item language-option" id="drop_item" href="#" data-language="english" onclick="changeLanguage('english')">EN</a>
+                    <a class="dropdown-item language-option" id="drop_item2" href="#" data-language="german" onclick="changeLanguage('german')">DE</a>
+                </div>
+            </div>
+        </div>
+
+
+    </nav>
+
+
+    <p class="title">Yana <br> Krstic</p>
+</header>
+<section>
+    <div class="inner">
+        <div class="container_parameters_one english-text" lang="en">
+            <p class="parameters_container">Chest <span class="number">96</span></p>
+            <p class="parameters_container">Hip <span class="number">103</span></p>
+            <p class="parameters_container">Waist <span class="number">72</span></p>
+            <p class="parameters_container">Height <span class="number">171</span></p>
+            <p class="parameters_container">Shoe size <span class="number">39.5</span></p>
+            <p class="parameters_container">Clothing size <span class="number">M</span></p>
+            <p class="parameters_container">Eye color <span class="number">green-braun</span></p>
+            <p class="parameters_container">Hair color <span class="number">braun</span></p>
+            <p class="parameters_container">Hair length <span class="number">short</span></p>
+            <p class="parameters_container">Hair type <span class="number">wavy</span></p>
+        </div>
+        <div class="container_parameters_one german-text"  lang="de">
+            <p class="parameters_container">Brustumfang <span class="number">96</span></p>
+            <p class="parameters_container">Hüfte <span class="number">103</span></p>
+            <p class="parameters_container">Taille <span class="number">72</span></p>
+            <p class="parameters_container">Grösse <span class="number">171</span></p>
+            <p class="parameters_container">Schuhgrösse <span class="number">39.5</span></p>
+            <p class="parameters_container">Konfektionsgrösse <span class="number">M</span></p>
+            <p class="parameters_container">Augenfarbe <span class="number">Grün-Braun</span></p>
+            <p class="parameters_container">Haarfarbe <span class="number">Braun</span></p>
+            <p class="parameters_container">Haarlänge <span class="number">kurz</span></p>
+            <p class="parameters_container">Haartyp <span class="number">gewellt</span></p>
+        </div>
+
+        <div class="buttons_top">
+            <button class="small-button-cm-top" onclick="toggleUnits('cm')">CM</button>
+            <button class="small-button-inc-top" onclick="toggleUnits('in')">IN</button>
+        </div>
+    </div>
+
+    <div id="parameters" class="outside">
+        <div class="block_left">
+            <p class="instagram"><img class="img_insta" src="img/instagram.png" alt="icon intagram">
+                <a href="https://www.instagram.com/lemtyuhova_yana?igshid=MTNiYzNiMzkwZA%3D%3D&utm_source=qr">@lemtyuhova_yana</a>
+            </p>
+            <p class="facebook">
+                <img class="img_facebook" src="img/facebook.png" alt="icon facebook">
+                <a href="https://www.facebook.com/ranko.krstic.7">Yana Lemtyuhova</a>
+            </p>
+        </div>
+
+        <div class="photo_preview">
+            <img class="one" src="img/2/IMG_2136.jpg" alt="">
+            <img class="one" src="img/1/49.jpg" alt="">
+            <img class="two" src="img/1/43.jpg" alt="">
+            <img class="one" src="img/1/39083.jpg" alt="">
+            <img class="one" src="img/2/IMG_2176.jpg" alt="">
+            <img class="two" src="img/1/23.jpg" alt="">
+
+        </div>
+
+        <div class="block_right">
+            <div class="cols">
+                <div class="column_one">
+                    <p class="parameters english-text" lang="en">
+                        <span class="param_title">Dimensions</span><br>
+                        Chest <br>
+                        Hip <br>
+                        Waist <br>
+                        Height <br>
+                        Shoe size <br>
+                        Clothing size <br><br>
+
+                        <span class="param_title">Look</span> <br>
+                        Eye color <br>
+                        Hair color <br>
+                        Hair length <br>
+                        Hair type <br>
+                    </p>
+                    <p class="parameters german-text" lang="de">
+                        <span class="param_title">Masse</span><br>
+                        Brustumfang <br>
+                        Hüfte <br>
+                        Taille <br>
+                        Grösse <br>
+                        Schuhgrösse <br>
+                        Konfektionsgrösse <br><br>
+
+                        <span class="param_title">Look</span> <br>
+                        Augenfarbe <br>
+                        Haarfarbe <br>
+                        Haarlänge <br>
+                        Haartyp <br>
+                    </p>
+                </div>
+
+                <div class="column_two">
+                    <p class="parameters_numbers english-text" lang="en"><br>
+                        <span class="number chest">96</span> <br>
+                        <span class="number hip">103</span> <br>
+                        <span class="number waist">72</span> <br>
+                        <span class="number height">171</span> <br>
+                        <span class="number shoe-size">39.5</span> <br>
+                        <span class="number clothing-size">M</span> <br><br><br>
+                        <span class="number-of eye-color">green-brown</span> <br>
+                        <span class="number-of hair-color">brown</span> <br>
+                        <span class="number-of hair-length">short</span> <br>
+                        <span class="number-of hair-type">wavy</span> <br>
+                    </p>
+                    <p class="parameters_numbers german-text" lang="de"><br>
+                        <span class="number chest">96</span> <br>
+                        <span class="number hip">103</span> <br>
+                        <span class="number waist">72</span> <br>
+                        <span class="number height">171</span> <br>
+                        <span class="number shoe-size">39.5</span> <br>
+                        <span class="number clothing-size">M</span> <br><br><br>
+                        <span class="number-of eye-color">grün-braun</span> <br>
+                        <span class="number-of hair-color">braun</span> <br>
+                        <span class="number-of hair-length">kurz</span> <br>
+                        <span class="number-of hair-type">gewellt</span> <br>
+                    </p>
+                </div>
+            </div>
+            <div class="buttons_bottom" >
+                <button class="small-button-cm" onclick="toggleUnits('cm')">CM</button>
+                <button class="small-button-inc" onclick="toggleUnits('in')">IN</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="about" lang="en">
+        <p lang="en" class="about_title english-text">ABOUT</p>
+        <p lang="de" class="about_title german-text">Über mich</p>
+        <p lang="en" class="about_text english-text">My name is Yana, and I am passionate about everything related to
+            style and
+            creativity.
+            Ever since I stepped into the world of fashion, I have discovered an endless source of inspiration that
+            constantly drives me to grow and improve. Thanks to my experiences in sports, dance, and acting, I have
+            developed a versatile set of skills that have opened many doors for me in the industry.
+
+            <br><br>For me, fashion is like a blank canvas where I can freely express my creativity in front of the
+            camera. I firmly believe that working in the world of fashion is much more than just a job: it's my passion,
+            my world of expression, and endless possibilities.
+
+            <br><br>I am excited to bring my dedication, creativity, and infectious energy into such an stimulating
+            environment. I am firmly convinced that working in the fashion industry is my calling, which is why I pursue
+            this activity with complete dedication and passion.</p>
+
+
+        <p lang="de" class="about_text german-text">Mein Name ist Yana, und ich bin leidenschaftlich an allem
+            interessiert, was mit
+            Stil und Kreativität zu tun hat. Seitdem ich in die Welt der Mode eingetreten bin, habe ich eine unendliche
+            Quelle der Inspiration entdeckt, die mich ständig dazu antreibt, zu wachsen und mich zu verbessern. Dank
+            meiner Erfahrungen im Sport, Tanz und Schauspiel habe ich ein vielseitiges Set an Fähigkeiten entwickelt,
+            das mir viele Türen in der Branche geöffnet hat.
+
+            <br><br>Für mich ist Mode wie eine leere Leinwand, auf der ich meine Kreativität frei vor der Kamera
+            ausleben kann. Ich bin fest davon überzeugt, dass in der Mode zu arbeiten viel mehr ist als nur ein Job: Es
+            ist meine Leidenschaft, meine Welt des Ausdrucks und unendlicher Möglichkeiten.
+
+            <br><br>Ich freue mich darauf, meine Hingabe, Kreativität und mitreißende Energie in einem so anregenden
+            Umfeld einzubringen. Ich bin fest davon überzeugt, dass die Arbeit in der Modewelt meine Berufung ist, und
+            deshalb verfolge ich diese Tätigkeit mit voller Hingabe und Leidenschaft.</p>
+
+    </div>
+
+
+    <div class="photo_preview2">
+        <div class="column">
+            <img class="one1" src="img/1/02.jpg" alt="">
+            <img class="one1" src="img/2/IMG_2170.jpg" alt="">
+            <img class="one1" src="img/1/39086.jpg" alt="">
+        </div>
+
+        <div class="column">
+            <img class="one2" src="img/1/39087.jpg" alt="">
+            <img class="one2" src="img/2/IMG_2329.jpg" alt="">
+            <img class="one2" src="img/1/39082.jpg" alt="">
+        </div>
+
+    </div>
+
+    <div id="contact" class="contact">
+        <p class="about_title english-text" lang="en">Contact</p>
+        <p class="about_title german-text" lang="de">Kontakt</p>
+
+        <a href=mailto:janakrstic36@gmail.com>
+            <img class="contact-img" src="img/email.png" alt="email">
+            janakrstic36@gmail.com
+        </a> <br>
+        <a href="whatsapp://send?abid=+41 79 925 60 56&text=Hello%2C%20World!">
+            <img class="contact-img" src="img/whatsapp.png" alt="whatsapp">
+            +41 79 925 60 56
+        </a> <br>
+        <a href="https://www.instagram.com/lemtyuhova_yana?igshid=MTNiYzNiMzkwZA%3D%3D&utm_source=qr">
+            <img class="contact-img" src="img/instagram.png" width="20" height="auto" alt="instagram">
+            @lemtyuhova_yana
+        </a> <br>
+        <a href="https://www.facebook.com/ranko.krstic.7">
+            <img class="contact-img" src="img/facebook.png" width="20" height="auto" alt="facebook">
+            Yana Lemtyuhova
+        </a>
+    </div>
+
+    <div class="modal" id="myModal">
+        <button id="close" onclick="closeModal()">&#10539;</button>
+        <div class="modal-controls">
+            <button onclick="prevImage()">&#10092;</button>
+            <button onclick="nextImage()">&#10093;</button>
+        </div>
+        <img id="modalImg" class="modal-content">
+    </div>
+
+
+    <div class="btn-up btn-up_hide"></div>
+</section>
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-left">
+            <span class="footer-name">Yana Krstic</span>
+            <div class="social-icons">
+                <a class="social_item"
+                   href="https://www.instagram.com/lemtyuhova_yana?igshid=MTNiYzNiMzkwZA%3D%3D&utm_source=qr">
+                    <img src="img/instagram.png" width="20" height="auto" alt="instagram">
+                </a>
+                <a class="social_item" href="https://www.facebook.com/ranko.krstic.7">
+                    <img src="img/facebook.png" width="20" height="auto" alt="facebook">
+                </a>
+                <a class="social_item" href="whatsapp://send?abid=+41 79 925 60 56&text=Hello%2C%20World!">
+                    <img src="img/whatsapp.png" width="20" height="auto" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <nav class="footer-nav">
+                <ul class="english-text" lang="en">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+                <ul class="german-text" lang="de">
+                    <li><a href="#home">Heim</a></li>
+                    <li><a href="#about">Über</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                    <li><a href="gallery.html">Galerie</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+<script></script>
+</body>
+</html>
